@@ -1,0 +1,25 @@
+plugins {
+
+    id 'java-library'
+
+}
+
+bootJar {
+
+    enabled = false
+
+}
+
+jar {
+
+    enabled = true
+
+}
+
+dependencies {
+
+    compile project(':module-common')
+    compile project(':module-logging')
+    compile project(':module-organizations')
+
+}
